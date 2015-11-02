@@ -1,0 +1,100 @@
+<h1>Computer Census</h1>
+<div id="census">
+  <form id="census-form" action="#">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+      </p>
+      <fieldset>
+        <legend>Hair Style</legend>
+
+        <label for="hair_style_0">Up</label><input type="radio" name="hair_style" id="hair_style_0" value="up">
+        <label for="hair_style_1">Down</label><input type="radio" name="hair_style" id="hair_style_1" value="down">
+        <label for="hair_style_2">None</label><input type="radio" name="hair_style" id="hair_style_2" value="none">
+        <label for="hair_style_3">Other</label><input type="radio" name="hair_style" id="hair_style_3" value="other">
+      </fieldset>
+      <p>Tell us even more information, because we asked!</p>
+      <p>
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" name="phone" id="phone">
+      </p>
+      <p>
+        <label for="website">Website URL:</label>
+        <input type="url" name="website" id="website">
+      </p>
+
+      <input type="hidden" name="super_secret_data" id="super_secret_data" value="I Know Your IP">
+    </fieldset>
+    <fieldset>
+      <legend>Computer Information</legend>
+
+      <p>
+        <label for="computer_type">Computer Type:</label>
+        <input list="computer_types" name="computer_type" id="computer_type">
+        <datalist id="computer_types">
+          <option value="MacBook Air 11-inch">
+          <option value="MacBook 12-inch">
+          <option value="MacBook 13-inch">
+          <option value="MacBook Pro 13-inch">
+          <option value="MacBook Pro Retina 13-inch">
+          <option value="MacBook Pro Retina 15-inch">
+          <option value="iMac 21.5-inch">
+          <option value="iMac Retina 21.5-inch">
+          <option value="iMac Retina 27-inch">
+          <option value="Mac mini">
+          <option value="Mac Pro">
+        </datalist>
+      </p>
+      <p>
+        <label for="computer_color">Computer Color:</label>
+        <input type="color" name="computer_color" id="computer_color">
+      </p>
+      <p>
+        <label for="computer_photo">Photo of your computer:</label>
+        <input type="file" accept="image/*" name="computer_photo" id="computer_photo">
+      </p>
+      <fieldset>
+        <legend>Computer Uses</legend>
+        <p>Select all that apply:</p>
+
+        <label for="computer_uses_browsing">Web Browsing</label>
+        <input type="checkbox" name="computer_uses_browsing" id="computer_uses_browsing" value="browsing">
+        <label for="computer_uses_blogging">Blogging</label>
+        <input type="checkbox" name="computer_uses_blogging" id="computer_uses_blogging" value="blogging">
+        <label for="computer_uses_tweeting">Tweeting</label>
+        <input type="checkbox" name="computer_uses_tweeting" id="computer_uses_tweeting" value="tweeting">
+        <label for="computer_uses_coding">Coding</label>
+        <input type="checkbox" name="computer_uses_coding" id="computer_uses_coding" value="coding">
+      </fieldset>
+      <p>
+        <label for="computer_other">Tell us anything else about your computer:</label>
+        <br>
+        <textarea rows="10" cols="50" name="computer_other" id="computer_other"></textarea>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Edit this form later by saving it</legend>
+      <p>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email">
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+      </p>
+      <p>
+        <input type="submit" name="submit" id="submit" value="Submit Census">
+      </p>
+      <p>
+        <input type="reset" name="reset" id="reset" value="Reset form (!)">
+      </p>
+    </fieldset>
+  </form>
+</div>

@@ -2,6 +2,6 @@ require "sinatra"
 
 class FormsSite < Sinatra::Base
   get "/" do
-    "Root route"
+    erb :census
   end
 end

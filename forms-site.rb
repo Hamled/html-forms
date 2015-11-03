@@ -11,6 +11,13 @@ class FormsSite < Sinatra::Base
 
   post "/login" do
     @username = params[:email]
-    erb :account
+    password = params[:passcode]
+    if @username == "potus@whitehouse.gov" &&
+       password == "michelle2024"
+      erb :account
+    else
+      @login_failed = true
+      erb :login
+    end
   end
 end

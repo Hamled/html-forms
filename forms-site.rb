@@ -8,4 +8,9 @@ class FormsSite < Sinatra::Base
   get "/login" do
     erb :login
   end
+
+  post "/login" do
+    @username = params[:email]
+    erb :account
+  end
 end
